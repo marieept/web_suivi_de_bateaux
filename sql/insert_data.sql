@@ -1,0 +1,17 @@
+INSERT INTO Etat (id_etat, libelle) VALUES
+(0, 'En route au moteur'),
+(1, 'Au mouillage'),
+(2, 'Hors de contrôle'),
+(3, 'Manœuvre restreinte'),
+(4, 'Contraint par tirant d eau'),
+(5, 'Amarré'),
+(6, 'Échoué'),
+(7, 'Pêche en cours'),
+(8, 'Navigation à la voile'),
+(9, 'Réservé modif statut nav HSC'),
+(10, 'Réservé modif statut nav WIG'),
+(11, 'Réservé usage futur 1'),
+(12, 'Réservé usage futur 2'),
+(13, 'Réservé usage futur 3'),
+(14, 'AIS-SART (balise de recherche active)'),
+(15, 'Non défini (par défaut)');

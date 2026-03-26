@@ -1,0 +1,119 @@
+<!DOCTYPE html> <!--pour HTML5-->
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title> Projet AIS - Ajouter un bateau</title>
+
+    <!-- CSS Styles -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+
+    <!-- JS Scripts -->
+    <script src="js/utils.js" defer></script>
+    <script src="js/ajout_donnee.js" defer></script>
+
+</head>
+
+<body id="ajout_page">
+    <header> 
+        <h1> Projet AIS - Analyse des comportements des navires</h1>
+        <nav> <!-- menu -->
+            <a href="index.html">Accueil</a>
+            <a href="ajouter.html">Ajouter</a>
+            <a href="visualisation.html">Visualiser</a>
+            
+        </nav>
+    </header>
+
+    <section>
+        
+
+        <h2 class="titre-centre">Ajouter un navire</h2>
+
+<form id="form_bateau">
+
+    <h3>Caractéristiques du bateau</h3>
+
+    <div class="form-row">
+        <label for="mmsi">MMSI :</label>
+        <input type="text" name="mmsi" id="mmsi" required>
+    </div>
+
+    <div class="form-row">
+        <label for="nom">Nom du bateau :</label>
+        <input type="text" name="nom_bateau" id="nom" required>
+    </div>
+
+    <div class="form-row">
+        <label for="longueur">Longueur :</label>
+        <input type="number" name="longueur" id="longueur" min="0" required>
+    </div>
+
+    <div class="form-row">
+        <label for="largeur">Largeur :</label>
+        <input type="number" name="largeur" id="largeur" min="0" required>
+    </div>
+
+    <div class="form-row">
+        <label for="tirant_eau">Tirant d'eau :</label>
+        <input type="number" name="tirant_eau" id="tirant_eau" min="0" step="any" required>
+    </div>
+
+    <h3>Données à rentrer</h3>
+
+    <div class="form-row">
+        <label for="horodatage">Horodatage :</label>
+        <input type="datetime-local" name="horodatage" id="horodatage" required>
+    </div>
+
+    <div class="form-row">
+        <label for="latitude">Latitude :</label>
+        <input type="number" name="latitude" id="latitude" step="any" min="-90" max="90" required>
+    </div>
+
+    
+    <div class="form-row">
+        <label for="longitude">Longitude :</label>
+        <input type="number" name="longitude" id="longitude" step="any" min="-180" max="180" required>
+    </div>
+
+    <div class="form-row">
+        <label for="sog">SOG :</label>
+        <input type="number" name="sog" id="sog" step="any" min="0" required>
+    </div>
+
+    <div class="form-row">
+        <label for="cog">COG :</label>
+        <input type="number" name="cog" id="cog" step="any" min="0" required>
+    </div>
+
+    <div class="form-row">
+        <label for="heading">Heading :</label>
+        <input type="number" name="heading" id="heading" step="any" min="0" required>
+    </div>
+
+    <h3>État du bateau</h3>
+    <div class="form-row">
+        <label for="etat">État :</label>
+        <select name="id_etat" id="etatSelect" required>
+            <option value="" disabled selected>Choisir...</option>
+        </select>
+    </div>
+    <button type="submit" id="btn-ajouter-bateau">Ajouter le bateau</button>
+
+
+</form>
+
+    </section>
+
+    <footer>
+    <div class="footer-left">
+        <p>© Groupe 5 - ISEN A3 2025</p>
+    </div>
+    <div class="footer-right">
+        <a href="mailto:lisa.passieux@isen-ouest.yncrea.fr">Lisa PASSIEUX</a>
+        <a href="mailto:asma.rassil@isen-ouest.yncrea.fr">Asma RASSIL</a>
+        <a href="mailto:marie.epinat@isen-ouest.yncrea.fr">Marie EPINAT</a>
+    </div>
+    </footer>
+
+</body>

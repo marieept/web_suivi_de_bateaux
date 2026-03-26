@@ -1,0 +1,359 @@
+/* Police générale */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F4F4F4;
+    color: #333333;
+}
+/* _______________________________________________________*/
+
+/* Titres */
+
+h1 {
+    color: #003B6F;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    color: #003B6F;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+} 
+/* _______________________________________________________*/
+
+/* Structure générale des pages */
+
+.page {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #e5eafc;
+}
+
+#container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 60px;
+  max-width: 1400px;
+  margin: auto;
+}
+/* _______________________________________________________*/
+
+/* En-tête */
+
+header {
+    background-color: #003B6F;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #FFFFFF;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: 2px solid #FFFFFF;
+}
+
+nav a:hover,
+#accueil_page a[href="index.html"],
+#ajout_page a[href="ajouter.html"],
+#visu_page a[href="visualisation.html"],
+#visualisation_page a[href="visualisation.html"],
+#cluster_page a[href="visualisation.html"],
+#type_page a[href="visualisation.html"] {
+    background-color: #0077B6;
+}
+/* _______________________________________________________*/
+
+/* Accueil */
+
+.accueil {
+    display: flex;
+    align-items: center;           
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px;
+    background-color: #e5eafc;
+              
+}
+
+.texte {
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    text-align: justify;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.bloc-image {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.image-bateau {
+    max-width:45% ;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+/* _______________________________________________________*/
+
+/* Formulaires */
+
+    /* Formulaire d'ajout d'un bateau*/
+#form_bateau {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #F4F4F4;
+    border: 2px solid #0077B6;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+}
+
+    /* Champs du formulaire*/
+#form_bateau input[type="text"],
+#form_bateau input[type="number"],
+#form_bateau input[type="datetime-local"],
+#form_bateau select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+    /* Bouton de submit*/
+#form_bateau input[type="submit"] {
+    background-color: #0077B6;
+    color: #FFFFFF;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: grab;
+    box-shadow: .4px .4px #d2cece;
+    font-weight: bold;
+    font-size: 16px;
+    align-self: center;
+}
+
+#form_bateau input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+    /* Organisation des lignes des formulaires*/
+.form-row label {
+    flex: 0 0 100px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.form-row input,
+.form-row select {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+    /* Formulaire de la prédiction de la trajectoire */
+#form_prediction {
+  padding: 30px;
+  background-color: #ffffff;
+  border: 2px solid #0077B6;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+/* _______________________________________________________*/
+
+/*Types de navires*/
+
+.conteneur-flex {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  gap: 40px;
+  padding: 50px 30px;
+  flex-wrap: wrap;
+}
+
+.navire_infos {
+    width: 40%;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #fff;
+    border: 2px solid #d3d3d3;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.coordonnees {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.prediction {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #003366;
+}
+
+.caractéristiques {
+  width: 20%;
+  margin: 0;
+  padding: 10px;
+  text-align: justify;
+  background-color: white;
+  border-radius: 10px;
+  line-height: 1.8;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* _______________________________________________________*/
+
+/* Tableaux */
+
+#tableBateaux {
+  border-collapse: collapse;
+  width: 95%;
+  margin: 20px auto;
+  font-size: 0.9em;
+}
+
+#tableBateaux th, 
+#tableBateaux td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: center;
+}
+/* _______________________________________________________*/
+
+/* Boutons */
+
+    /* Boutons de prédiction qui ouvrent une autre page */
+#boutons-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#boutons-actions section {
+    display: inline-block;
+}
+
+    /* Bouton général */
+button {
+    background-color: #f0f0f0;
+    color: #0077B6;
+    padding: 6px 14px;
+    border: 2px solid #0077B6;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0077B6;
+    color: white;
+}
+
+    /* Bouton pour ajouter un bateau */
+#btn-ajouter-bateau {
+    background-color: #0077B6;
+    color: white;
+    padding: 6px 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* _______________________________________________________*/
+
+/* Cartes */
+
+#map,
+#map2 {
+  height: 500px;
+  width: 60%;
+  margin: 10px auto 0 auto;
+}
+/* _______________________________________________________*/
+
+/* Pied de page */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:  #003B6F;
+  color: #FFFFFF;
+  padding: 0.5em;
+  margin : 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-right a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.footer-right a:hover {
+  color: #a8cbde;
+}
+
+
+
