@@ -74,7 +74,7 @@ web_suivi_de_bateaux/
 
 ## Modèle Conceptuel des Données (MCD)
 
-![MCD des navires](docs/mcd_navires.png)
+![MCD des navires](docs/mcd_navires.pdf)
 
 ## API / Endpoints
 
@@ -90,6 +90,7 @@ Le backend expose plusieurs endpoints pour gérer les navires et effectuer les p
 | Prédiction type               | POST   | ../backend/php/prediction_type.php            | Données du navire                          | `{prediction:...}`              |
 | Prédiction trajectoire        | POST   | ../backend/php/prediction_trajectoire.php     | Données du navire                          | `{sog:..., cog:..., heading:..., lat:..., lon:...}` |
 
+La liste complète des endpoints du backend est disponible dans [docs/API_Endpoints.pdf](docs/API_Endpoints.pdf)
 
 ## Répartition du travail
 
