@@ -35,7 +35,7 @@ web_suivi_de_bateaux/
 │ └── python/
 ├── sql/
 ├── docs/
-│   └── API_Endpoints.pdf
+│   ├── API_Endpoints.pdf
 │   └── mcd_navires.pdf
 └── README.md
 ```
