@@ -6,12 +6,17 @@ Ce projet a pour objectif d'analyser les données AIS (Automatic Identification 
 
 Marie EPINAT - Lisa PASSIEUX - Asma RASSIL
 
-## Tester localement
+## Remarque importante
 
-1. Cloner ce repo
-2. Installer MySQL et Python
-3. Lancer le backend PHP et les scripts Python
-4. Ouvrir `frontend/index.html` dans le navigateur
+Ce projet n'est plus fonctionnel en l'état sur un environnement local ou distant, car il dépend de configurations et de bases de données spécifiques à l'ISEN Ouest.  
+
+Le code et les fichiers présents illustrent :
+- L'organisation du projet (frontend, backend, base de données)
+- Les fonctionnalités développées
+- Les scripts Python pour les prédictions
+- L'intégration frontend-backend avec PHP/AJAX  
+
+Le but est de montrer les compétences acquises et les travaux réalisés pendant le projet.
 
 ## Organisation du projet
 ```
