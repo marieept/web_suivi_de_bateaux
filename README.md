@@ -6,6 +6,13 @@ Ce projet a pour objectif d'analyser les données AIS (Automatic Identification 
 
 Marie EPINAT - Lisa PASSIEUX - Asma RASSIL
 
+## Tester localement
+
+1. Cloner ce repo
+2. Installer MySQL et Python
+3. Lancer le backend PHP et les scripts Python
+4. Ouvrir `frontend/index.html` dans le navigateur
+
 ## Organisation du projet
 ```
 web_suivi_de_bateaux/
